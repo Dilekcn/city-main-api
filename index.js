@@ -23,7 +23,7 @@ const getCity = async () => {
 
 const getAdj = async () => {
   try {
-    const res = await fetch("http://localhost:3000/adj");
+    const res = await fetch("http://localhost:3010/adj");
 
     const data = await res.json();
     return data;
