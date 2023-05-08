@@ -39,7 +39,6 @@ app.get("/", async (req, res) => {
   city = await getCity();
   console.log(city.name);
   adj = await getAdj();
-  console.log(adj);
 
   if (city === "error" || adj === "error") {
     return res.status(500).json("Something went wrong");
